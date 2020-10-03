@@ -4,6 +4,10 @@ namespace Payment_Processing_System
 {
     class Program
     {
+        /// <summary>
+        /// Main method - start point
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Console.WriteLine("Press any key to continue...");

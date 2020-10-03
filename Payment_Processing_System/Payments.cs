@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Payment_Processing_System
+﻿namespace Payment_Processing_System
 {
     /// <summary>
     /// The Physical Product.
