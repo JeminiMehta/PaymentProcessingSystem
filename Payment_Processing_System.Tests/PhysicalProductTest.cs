@@ -6,6 +6,9 @@ namespace Payment_Processing_System.Tests
     [TestClass]
     public class PhysicalProductTest
     {
+        /// <summary>
+        /// HandleOrder method test for PhysicalProduct
+        /// </summary>
         [TestMethod]
         public void PhysicalProductTest_HandleOrder_ShouldReturn_Rule()
         {
@@ -23,6 +26,9 @@ namespace Payment_Processing_System.Tests
             }
         }
 
+        /// <summary>
+        /// HandleOrder method test for Book
+        /// </summary>
         [TestMethod]
         public void BookTest_HandleOrder_ShouldReturn_Rule()
         {
@@ -40,6 +46,9 @@ namespace Payment_Processing_System.Tests
             }
         }
 
+        /// <summary>
+        /// HandleOrder method test for MemberShip
+        /// </summary>
         [TestMethod]
         public void MemberShipTest_HandleOrder_ShouldReturn_Rule()
         {
@@ -57,6 +66,9 @@ namespace Payment_Processing_System.Tests
             }
         }
 
+        /// <summary>
+        /// HandleOrder method test for Upgrade MemberShip
+        /// </summary>
         [TestMethod]
         public void UpgradeMemberShipTest_HandleOrder_ShouldReturn_Rule()
         {
@@ -74,6 +86,9 @@ namespace Payment_Processing_System.Tests
             }
         }
 
+        /// <summary>
+        /// HandleOrder method test for Video "Learning to Ski"
+        /// </summary>
         [TestMethod]
         public void VideoLearningtoSkiTest_HandleOrder_ShouldReturn_Rule()
         {
