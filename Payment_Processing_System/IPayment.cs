@@ -1,5 +1,4 @@
-﻿
-namespace Payment_Processing_System
+﻿namespace Payment_Processing_System
 {
     /// <summary>
     /// Handle Order Interface

@@ -15,14 +15,14 @@ namespace Payment_Processing_System.Tests
             using (var mock = AutoMock.GetLoose())
             {
                 // Arrange - configure the mock
-                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("generate a packing slip for shipping , generate a commission payment to the agent");
+                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("generate a packing slip for shipping , generate a commission payment to the agent.");
                 var sut = mock.Create<PhysicalProduct>();
 
                 // Act
                 var actual = sut.HandleOrder();
 
                 // Assert - assert on the mock
-                Assert.AreEqual("generate a packing slip for shipping , generate a commission payment to the agent", actual);
+                Assert.AreEqual("generate a packing slip for shipping , generate a commission payment to the agent.", actual);
             }
         }
 
@@ -35,14 +35,14 @@ namespace Payment_Processing_System.Tests
             using (var mock = AutoMock.GetLoose())
             {
                 // Arrange - configure the mock
-                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("create a duplicate packing slip for the royalty department , generate a commission payment to the agent");
+                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("create a duplicate packing slip for the royalty department , generate a commission payment to the agent.");
                 var sut = mock.Create<Book>();
 
                 // Act
                 var actual = sut.HandleOrder();
 
                 // Assert - assert on the mock
-                Assert.AreEqual("create a duplicate packing slip for the royalty department , generate a commission payment to the agent", actual);
+                Assert.AreEqual("create a duplicate packing slip for the royalty department , generate a commission payment to the agent.", actual);
             }
         }
 
@@ -55,14 +55,14 @@ namespace Payment_Processing_System.Tests
             using (var mock = AutoMock.GetLoose())
             {
                 // Arrange - configure the mock
-                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("activate that membership , e-mail the owner and inform them of the activation/upgrade");
+                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("activate that membership , e-mail the owner and inform them of the activation/upgrade.");
                 var sut = mock.Create<MemberShip>();
 
                 // Act
                 var actual = sut.HandleOrder();
 
                 // Assert - assert on the mock
-                Assert.AreEqual("activate that membership , e-mail the owner and inform them of the activation/upgrade", actual);
+                Assert.AreEqual("activate that membership , e-mail the owner and inform them of the activation/upgrade.", actual);
             }
         }
 
@@ -75,14 +75,14 @@ namespace Payment_Processing_System.Tests
             using (var mock = AutoMock.GetLoose())
             {
                 // Arrange - configure the mock
-                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("apply the upgrade , e-mail the owner and inform them of the activation/upgrade");
+                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("apply the upgrade , e-mail the owner and inform them of the activation/upgrade.");
                 var sut = mock.Create<UpgradeMemberShip>();
 
                 // Act
                 var actual = sut.HandleOrder();
 
                 // Assert - assert on the mock
-                Assert.AreEqual("apply the upgrade , e-mail the owner and inform them of the activation/upgrade", actual);
+                Assert.AreEqual("apply the upgrade , e-mail the owner and inform them of the activation/upgrade.", actual);
             }
         }
 
@@ -95,14 +95,14 @@ namespace Payment_Processing_System.Tests
             using (var mock = AutoMock.GetLoose())
             {
                 // Arrange - configure the mock
-                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("add a free “First Aid” video to the packing slip (the result of a court decision in 1997)");
+                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("add a free “First Aid” video to the packing slip (the result of a court decision in 1997).");
                 var sut = mock.Create<VideoLearningtoSki>();
 
                 // Act
                 var actual = sut.HandleOrder();
 
                 // Assert - assert on the mock
-                Assert.AreEqual("add a free “First Aid” video to the packing slip (the result of a court decision in 1997)", actual);
+                Assert.AreEqual("add a free “First Aid” video to the packing slip (the result of a court decision in 1997).", actual);
             }
         }
     }
