@@ -1,6 +1,9 @@
 ﻿
 namespace Payment_Processing_System
 {
+    /// <summary>
+    /// Constants file
+    /// </summary>
     static class Constants
     {
         public static string PHYSICAL_PRODUCT_RULE = "generate a packing slip for shipping , generate a commission payment to the agent";

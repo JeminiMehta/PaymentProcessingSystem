@@ -2,6 +2,9 @@
 
 namespace Payment_Processing_System
 {
+    /// <summary>
+    /// The Physical Product.
+    /// </summary>
     public class PhysicalProduct : IPayment
     {
         public string HandleOrder()
@@ -10,6 +13,9 @@ namespace Payment_Processing_System
         }
     }
 
+    /// <summary>
+    /// The Book.
+    /// </summary>
     public class Book : IPayment
     {
         public string HandleOrder()
@@ -18,6 +24,9 @@ namespace Payment_Processing_System
         }
     }
 
+    /// <summary>
+    /// The Member Ship.
+    /// </summary>
     public class MemberShip : IPayment
     {
         public string HandleOrder()
@@ -26,6 +35,9 @@ namespace Payment_Processing_System
         }
     }
 
+    /// <summary>
+    /// The Upgrade MemberShip.
+    /// </summary>
     public class UpgradeMemberShip : IPayment
     {
         public string HandleOrder()
@@ -34,6 +46,9 @@ namespace Payment_Processing_System
         }
     }
 
+    /// <summary>
+    /// Video "Learning to Ski".
+    /// </summary>
     public class VideoLearningtoSki : IPayment
     {
         public string HandleOrder()
@@ -42,6 +57,9 @@ namespace Payment_Processing_System
         }
     }
 
+    /// <summary>
+    /// The BusinessRulesEngine.
+    /// </summary>
     public class BusinessRulesEngine
     {
         public IPayment _payment;
