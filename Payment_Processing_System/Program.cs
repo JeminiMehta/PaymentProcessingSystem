@@ -9,7 +9,7 @@ namespace Payment_Processing_System
             Console.WriteLine("Press any key to continue...");
             Console.ReadLine();
 
-            BusinessRulesEngine businessRulesEngine = new BusinessRulesEngine(new PhysicalProduct());
+            BusinessRulesEngineService businessRulesEngine = new BusinessRulesEngineService(new PhysicalProduct());
             string rule = businessRulesEngine.HandleOrder();
             Console.WriteLine(rule);
             Console.ReadKey();

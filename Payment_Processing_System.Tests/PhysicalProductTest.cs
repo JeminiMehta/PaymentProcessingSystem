@@ -22,5 +22,73 @@ namespace Payment_Processing_System.Tests
                 Assert.AreEqual("generate a packing slip for shipping , generate a commission payment to the agent", actual);
             }
         }
+
+        [TestMethod]
+        public void BookTest_HandleOrder_ShouldReturn_Rule()
+        {
+            using (var mock = AutoMock.GetLoose())
+            {
+                // Arrange - configure the mock
+                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("create a duplicate packing slip for the royalty department , generate a commission payment to the agent");
+                var sut = mock.Create<Book>();
+
+                // Act
+                var actual = sut.HandleOrder();
+
+                // Assert - assert on the mock
+                Assert.AreEqual("create a duplicate packing slip for the royalty department , generate a commission payment to the agent", actual);
+            }
+        }
+
+        [TestMethod]
+        public void MemberShipTest_HandleOrder_ShouldReturn_Rule()
+        {
+            using (var mock = AutoMock.GetLoose())
+            {
+                // Arrange - configure the mock
+                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("activate that membership , e-mail the owner and inform them of the activation/upgrade");
+                var sut = mock.Create<MemberShip>();
+
+                // Act
+                var actual = sut.HandleOrder();
+
+                // Assert - assert on the mock
+                Assert.AreEqual("activate that membership , e-mail the owner and inform them of the activation/upgrade", actual);
+            }
+        }
+
+        [TestMethod]
+        public void UpgradeMemberShipTest_HandleOrder_ShouldReturn_Rule()
+        {
+            using (var mock = AutoMock.GetLoose())
+            {
+                // Arrange - configure the mock
+                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("apply the upgrade , e-mail the owner and inform them of the activation/upgrade");
+                var sut = mock.Create<UpgradeMemberShip>();
+
+                // Act
+                var actual = sut.HandleOrder();
+
+                // Assert - assert on the mock
+                Assert.AreEqual("apply the upgrade , e-mail the owner and inform them of the activation/upgrade", actual);
+            }
+        }
+
+        [TestMethod]
+        public void VideoLearningtoSkiTest_HandleOrder_ShouldReturn_Rule()
+        {
+            using (var mock = AutoMock.GetLoose())
+            {
+                // Arrange - configure the mock
+                mock.Mock<IPayment>().Setup(x => x.HandleOrder()).Returns("add a free “First Aid” video to the packing slip (the result of a court decision in 1997)");
+                var sut = mock.Create<VideoLearningtoSki>();
+
+                // Act
+                var actual = sut.HandleOrder();
+
+                // Assert - assert on the mock
+                Assert.AreEqual("add a free “First Aid” video to the packing slip (the result of a court decision in 1997)", actual);
+            }
+        }
     }
 }

@@ -60,11 +60,11 @@ namespace Payment_Processing_System
     /// <summary>
     /// The BusinessRulesEngine.
     /// </summary>
-    public class BusinessRulesEngine
+    public class BusinessRulesEngineService
     {
         public IPayment _payment;
 
-        public BusinessRulesEngine(IPayment payment)
+        public BusinessRulesEngineService(IPayment payment)
         {
             _payment = payment;
         }
